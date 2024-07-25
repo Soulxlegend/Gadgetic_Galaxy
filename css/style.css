@@ -1,0 +1,439 @@
+@import url(https://fonts.googleapis.com/css?family=Patua+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif:regular);
+@import url(https://fonts.googleapis.com/css?family=Rhodium+Libre:regular);
+@import url(https://fonts.googleapis.com/css?family=Russo+One:regular);
+
+/*  Ali Strong Type Font Haru */
+
+@import url(https://fonts.googleapis.com/css?family=New+Rocker:regular);
+@import url(https://fonts.googleapis.com/css?family=Atomic+Age:regular);
+@import url(https://fonts.googleapis.com/css?family=Kelly+Slab:regular);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: red;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+
+}
+
+
+.gg_header {
+  background: rgba(255, 255, 255, 0.1);
+  background-size: cover;
+  background-position: top;
+  opacity: 1;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  z-index: 91;
+  left: 0;
+  width: 100%;
+  height: 25vh;
+}
+
+.gg_header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.3449754901960784) 49%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
+  transition: 0.7s ease-out all;
+}
+
+.gg_header:hover::before {
+  left: 200%;
+}
+
+.gg_logoContainer {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+
+.gg_logoContainer a {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.gg_logoIMG {
+  height: auto;
+  width: 20vw;
+}
+
+.gg_globalNav {
+  width: 100%;
+  margin-left: 16vw;
+  margin-right: 4vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  
+}
+
+.gg_listContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gg_globalLink {
+  list-style-type: none;
+  padding: 2vw;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+
+}
+
+.gg_Anchor {
+  position: relative;
+  text-decoration: none;
+  color: greenyellow;
+  font-weight: 700;
+  transition: .5s ease-in-out all;
+
+}
+
+.gg_Anchor::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  bottom: -8px;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  width: 3px;
+  height: 0;
+  transition: 0.3s ease-in-out all;
+}
+
+.gg_Anchor:hover::before {
+  height: 115%;
+}
+
+
+.gg_Anchor::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: -3px;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  width: 0;
+  height: 3px;
+  transition: 0.3s ease-in-out all;
+}
+
+
+.gg_Anchor:hover::after {
+  width: 115%;
+}
+
+.gg_Anchor:hover {
+  color: #0093E9;
+}
+
+#menu-icon {
+  display: none;
+  width: 9vw;
+  height: 5vh;
+}
+
+.gg_hambtn {
+  position: relative;
+  height: 7vh;
+  width: 9vw;
+  margin-right: 5vw;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* breakpoints */
+@media screen and (max-width: 768px) {
+  .gg_header {
+    opacity: 0.9;
+    height: 16vh;
+    position: relative;
+    
+  }
+
+.gg_header::before {
+  content: "";
+  height: 16.4%;
+  }
+
+  .gg_globalNav {
+    position: absolute;
+    background-color: #0093E9;
+    top: 14vh;
+    left: -104px;
+    padding: 3vw;
+    z-index: 1;
+    
+  }
+
+  .gg_hambtn:hover .gg_globalNav {
+    display: block;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+  }
+
+  #menu-icon {
+    display: block;
+    font-size: 9vw;
+    color: orange;
+    height: 5vh;
+    width: 9vw;
+    cursor: pointer;
+  }
+
+  .gg_logoContainer {
+    width: 500%;
+    height: 50%;
+  }
+
+  .gg_logoContainer a {
+    width: auto;
+    height: 40%;
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .gg_logoIMG {
+    height: 10vh;
+    width: auto;
+  }
+
+
+}
+
+
+.gg_globalMain {
+  
+
+}
+
+.gg_mainSection {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background: url('/Come_Back/SoulxLEGEND/img/hero_img.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 88vh;
+  color: white;
+}
+
+.gg_mainSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
+}
+
+.gg_sectionContent {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.gg_sectionContent h1 {
+  font-size: 4vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.2s ease-in-out all;
+  animation: glow-animation 1s infinite alternate;
+}
+
+.gg_sectionContent p {
+  height: 3vh;
+  width: 60%;
+  font-size: 1.3vw;
+  text-align: center;
+
+
+}
+
+@keyframes glow-animation {
+  0% {
+    text-shadow: 0 0 5px #ffff00, 0 0 5px #ff0000, 0 0 15px #ff6200, 0 0 20px #ff0000;
+  }
+
+  50% {
+    text-shadow: 0 0 10px #fffF00, 0 0 10px #ff0000, 0 0 30px #ff6200, 0 0 40px #ff0000;
+  }
+
+  100% {
+    text-shadow: 0 0 5px #fffF00, 0 0 5px #ff0000, 0 0 15px #ff6200, 0 0 20px #ff0000;
+  }
+}
+
+
+/* second wave */
+.gg_slider {
+  position: relative;
+  width: 90%;
+  margin: 5vh auto;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.gg_cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  height: 90%;
+  margin-top: 4vh;
+  padding: 2vw;
+  border-radius: 1vw 2vw 1vw 2vw;
+  overflow: hidden;
+  /* border: #0093E9 1vh solid; */
+  box-shadow: 6px 6px 10px rgba(255, 0, 0, 0.2);
+  animation: slide 10s ease-in-out infinite;
+}
+
+
+
+.gg_heading {
+  text-align: left;
+  font-size: 4vw;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 1vh;
+  color: white;
+
+}
+
+
+.gg_about {
+  font-size: 2vw;
+  text-align: left;
+  left: 2vw;
+  width: 40vw;
+  font-weight: 600;
+  margin-top: 1vh;
+  color: white;
+}
+
+.gg_cards:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(/Come_Back/SoulxLEGEND/img/home_samsung.jpg);
+  height: 100%;
+  width: 100%;
+  border-radius: 1vw 2vw 1vw 2vw;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  transition: 0.3s ease-in-out all;
+
+}
+
+.gg_cards:nth-child(1):hover::before {
+  filter: blur(2px);
+  opacity: .7;
+}
+
+
+.gg_cards:nth-child(1) {
+  left: 4.5vw;
+
+}
+
+.gg_cards:nth-child(2) {
+  left: -100%;
+
+}
+
+.gg_cards:nth-child(3) {
+  left: -200%;
+}
+
+.gg_cards:nth-child(4) {
+  left: -300%;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+
+  20% {
+    transform: translateX(0%);
+  }
+
+  25% {
+    transform: translateX(0%);
+  }
+
+  45% {
+    transform: translateX(118%);
+  }
+
+  50% {
+    transform: translateX(118%);
+  }
+
+  70% {
+    transform: translateX(228%);
+  }
+
+  75% {
+    transform: translateX(228%);
+  }
+
+  95% {
+    transform: translateX(340%);
+  }
+
+  100% {
+    transform: translateX(340%);
+  }
+
+}

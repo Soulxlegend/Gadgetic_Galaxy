@@ -1,0 +1,494 @@
+@import url(https://fonts.googleapis.com/css?family=Patua+One:regular);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif:regular);
+@import url(https://fonts.googleapis.com/css?family=Rhodium+Libre:regular);
+@import url(https://fonts.googleapis.com/css?family=Russo+One:regular);
+
+        /*  Ali Strong Type Font Haru */
+
+@import url(https://fonts.googleapis.com/css?family=New+Rocker:regular);
+@import url(https://fonts.googleapis.com/css?family=Atomic+Age:regular);
+@import url(https://fonts.googleapis.com/css?family=Kelly+Slab:regular);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #222222;
+    background-size: cover;
+    background-position: center;
+}
+
+.gg_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 11px 77px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+     word-spacing: 17px;     /* Space between the a elements of NAV */
+}
+
+
+
+.gg_header::before {                  /* Setting the cool effect  */                     
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent);
+    transition: 0.5s;
+}
+
+
+.gg_header:hover::before {
+    left: 100%;
+}
+
+.gglogoIMG {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+}
+
+
+
+.gg_globalNav a {
+    font-family: Kelly Slab;
+    color: #fff;
+    font-size: 32px;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: .4s;
+    font-weight:900;
+    font-style: bold;
+    letter-spacing: 1.9px;
+
+}
+
+.gg_globalNav a:hover {
+    color: #f00;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    color: #ff0000;
+    display: none;
+}
+
+
+/* BREAKPOINTS */
+
+@media (max-width: 992px) {
+    .header {
+        padding: 1.25rem 4%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+        font-size: 3.7rem;
+        color: rgb(153, 73, 51);
+    }
+
+
+    .gg_globalNav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0.5rem 4%;
+        display: none;
+    }
+
+    .gg_globalNav.active {
+        display: block;
+    }
+
+    .gg_globalNav a {
+        display: block;
+        margin: 1.5rem 0;
+        padding-top: -9px;
+    }
+
+    .nav-bg {                               
+        position: absolute;
+        top: 129px;
+        left: 0;
+        width: 100%;
+        height: 280px;
+        background: rgba(255, 255, 255, 0.1);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        z-index: 99;
+        display: none;
+    }
+
+    .nav-bg.active {
+        display: block;
+    }
+
+
+    .GG_logoimg {
+        height: 9vh;
+        width: auto;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    
+    #menu-icon {
+        /* display: block; */
+        color: rgb(153, 73, 51);
+    }
+    
+    
+.gg_globalNav a {
+    font-family: Kelly Slab;
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    margin-left:7px;
+    transition: .4s;
+    font-weight:900;
+    font-style: bold;
+    letter-spacing: 1.9px;
+
+}
+
+.GG_logoIMG {
+    height: 14vh;
+    width: auto;
+}
+
+}
+
+
+@media (max-width: 425px) and (min-width: 125px)  {
+
+.gg_logoIMG {
+    height: auto;
+    width: 17vh;
+}
+
+#menu-icon {
+    display: block;
+    font-size: 2.7rem;
+    color: rgb(153, 73, 51);
+}
+
+.nav-bg {                               
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+    display: none;
+}
+
+
+
+}
+
+.gg_globalNav a:hover,
+.gg_globalNav a.active {
+    color: #f00;
+    transition: .3s ease;
+}
+
+
+
+
+.gg_globalMain {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.gg_services_section {
+    overflow: hidden;
+}
+
+.gg_services_section:nth-child(1) {
+    background-position: right;
+    background-size: cover;
+    height: 40vh;
+    width: 40vw;
+    position: relative;
+    border-radius: 1vw 2vw 1vw 2vw;
+
+}
+
+.gg_services_section:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Come_Back/SoulxLEGEND/img/xiaomi.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw 2vw 1vw 2vw;
+    opacity: 0.3;
+    z-index: -1;
+    transition: 0.3s ease-out all;
+}
+
+
+.gg_services_section:nth-child(2) {
+    background-position: right;
+    background-size: cover;
+    height: 40vh;
+    width: 40vw;
+    position: relative;
+    border-radius: 1vw 2vw 1vw 2vw;
+}
+
+.gg_services_section:nth-child(2)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Come_Back/SoulxLEGEND/img/samsung.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw 2vw 1vw 2vw;
+    opacity: 0.3;
+    z-index: -1;
+    transition: 0.3s ease-out all;
+}
+
+.gg_services_section:nth-child(3) {
+    background-position: right;
+    background-size: cover;
+    height: 40vh;
+    width: 40vw;
+    position: relative;
+    border-radius: 1vw 2vw 1vw 2vw;
+}
+
+.gg_services_section:nth-child(3)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Come_Back/SoulxLEGEND/img/oppo.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw 2vw 1vw 2vw;
+    opacity: 0.3;
+    z-index: -1;
+    transition: 0.3s ease-out all;
+}
+
+.gg_services_section:nth-child(4) {
+    background-position: right;
+    background-size: cover;
+    height: 40vh;
+    width: 40vw;
+    position: relative;
+    border-radius: 1vw 2vw 1vw 2vw;
+}
+
+.gg_services_section:nth-child(4)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Come_Back/SoulxLEGEND/img/Pixel.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1vw 2vw 1vw 2vw;
+    opacity: 0.3;
+    z-index: -1;
+    transition: 0.3s ease-out all;
+}
+
+
+
+.gg_services_content {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -80%;
+    left: -90%;
+    z-index: 1;
+    background-color: rgba(153, 255, 255);
+    border-radius: 1vw 2vw 2vw 2vw;
+    transition: 0.4s ease-in-out all;
+
+}
+
+.gg_services_section:nth-child(1):hover::before {
+    opacity: 0;
+}
+
+.gg_services_section:nth-child(2):hover::before {
+    opacity: 0;
+}
+
+.gg_services_section:nth-child(3):hover::before {
+    opacity: 0;
+}
+
+.gg_services_section:nth-child(4):hover::before {
+    opacity: 0;
+}
+
+
+.gg_services_section:hover .gg_services_content {
+    top: 0;
+    left: 0;
+    border-radius: 1vw 2vw 1vw 2vw;
+    background-color: rgba(153, 255, 255, 0.2);
+}
+
+.gg_services_content2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -80%;
+    left: -90%;
+    z-index: 1;
+    background-color: rgb(102, 255, 51);
+    border-radius: 1vw 2vw 2vw 2vw;
+    transition: 0.4s ease-in-out all;
+
+}
+
+.gg_services_section:hover .gg_services_content2 {
+    top: 0;
+    left: 0;
+    border-radius: 1vw 2vw 1vw 2vw;
+    background-color: rgb(102, 255, 51, 0.2);
+}
+
+.gg_services_content3 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -80%;
+    left: -90%;
+    z-index: 1;
+    background-color: rgb(255, 26, 26);
+    border-radius: 1vw 2vw 2vw 2vw;
+    transition: 0.4s ease-in-out all;
+
+}
+
+.gg_services_section:hover .gg_services_content3 {
+    top: 0;
+    left: 0;
+    border-radius: 1vw 2vw 1vw 2vw;
+    background-color: rgb(255, 26, 26, 0.2);
+}
+
+.gg_services_content4 {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -80%;
+    left: -90%;
+    z-index: 1;
+    background-color: rgb(255, 26, 26);
+    border-radius: 1vw 2vw 2vw 2vw;
+    transition: 0.4s ease-in-out all;
+
+}
+
+.gg_services_section:hover .gg_services_content4 {
+    top: 0;
+    left: 0;
+    border-radius: 1vw 2vw 1vw 2vw;
+    background-color: rgb(255, 26, 26, 0.2);
+}
+
+
+/* ya bata aaru code ho  */
+
+.gg_content_header {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5vw;
+    margin-bottom: 2vh;
+}
+
+.gg_content_para {
+    text-align: center;
+    font-size: 1.1vw;
+    margin: 1vw 1vw;
+}
+
+.gg_content_anchor {
+    text-decoration: none;
+
+}
+
+/* yo walo come thoda milaun xa ali yeko animation niko xaina */
+
+.gg_content_btn {
+    height: 6vh;
+    width: 10vw;
+    border: 2px green solid;
+    border-radius: 1vw 2vw 1vw 2vw;
+    background: rgb(155, 242, 100);
+    cursor: pointer;
+    transition: 0.3s ease-in all;
+}
+
+.gg_content_btn:hover {
+    transform: scale(1vh);
+    border-radius: 2vw 1vw 2vw 1vw;
+}
