@@ -22,9 +22,7 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #1c1c1c;
-
 }
-
 
 .gg_header {
   background: rgba(255, 255, 255, 0.1);
@@ -44,13 +42,18 @@ body {
 }
 
 .gg_header::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.3449754901960784) 49%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.3449754901960784) 49%,
+    rgba(0, 0, 0, 0) 100%
+  );
   z-index: 0;
   transition: 0.7s ease-out all;
 }
@@ -74,7 +77,6 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-
 }
 
 .gg_logoIMG {
@@ -89,7 +91,6 @@ body {
   height: 10vh;
   display: flex;
   align-items: center;
-  
 }
 
 .gg_listContainer {
@@ -103,7 +104,6 @@ body {
   padding: 2vw;
   font-size: 1.5vw;
   text-transform: uppercase;
-
 }
 
 .gg_Anchor {
@@ -111,8 +111,7 @@ body {
   text-decoration: none;
   color: greenyellow;
   font-weight: 700;
-  transition: .5s ease-in-out all;
-
+  transition: 0.5s ease-in-out all;
 }
 
 .gg_Anchor::before {
@@ -120,8 +119,8 @@ body {
   position: absolute;
   left: -5px;
   bottom: -8px;
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   width: 3px;
   height: 0;
   transition: 0.3s ease-in-out all;
@@ -131,26 +130,24 @@ body {
   height: 115%;
 }
 
-
 .gg_Anchor::after {
   content: "";
   position: absolute;
   left: -10px;
   bottom: -3px;
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   width: 0;
   height: 3px;
   transition: 0.3s ease-in-out all;
 }
-
 
 .gg_Anchor:hover::after {
   width: 115%;
 }
 
 .gg_Anchor:hover {
-  color: #0093E9;
+  color: #0093e9;
 }
 
 #menu-icon {
@@ -169,29 +166,26 @@ body {
   justify-content: center;
 }
 
-
 /* breakpoints */
 @media screen and (max-width: 768px) {
   .gg_header {
     opacity: 0.9;
     height: 16vh;
     position: relative;
-    
   }
 
-.gg_header::before {
-  content: "";
-  height: 16.4%;
+  .gg_header::before {
+    content: "";
+    height: 16.4%;
   }
 
   .gg_globalNav {
     position: absolute;
-    background-color: #0093E9;
+    background-color: #0093e9;
     top: 14vh;
     left: -104px;
     padding: 3vw;
     z-index: 1;
-    
   }
 
   .gg_hambtn:hover .gg_globalNav {
@@ -220,28 +214,22 @@ body {
     height: 40%;
     display: flex;
     align-items: center;
-  
   }
-  
+
   .gg_logoIMG {
     height: 10vh;
     width: auto;
   }
-
-
 }
 
-
 .gg_globalMain {
-  
-
 }
 
 .gg_mainSection {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  background: url('/Come_Back/SoulxLEGEND/img/hero_img.jpg');
+  background: url("/Come_Back/SoulxLEGEND/img/hero_img.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -250,14 +238,18 @@ body {
 }
 
 .gg_mainSection::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   z-index: 0;
 }
 
@@ -289,24 +281,24 @@ body {
   width: 60%;
   font-size: 1.3vw;
   text-align: center;
-
-
 }
 
 @keyframes glow-animation {
   0% {
-    text-shadow: 0 0 5px #ffff00, 0 0 5px #ff0000, 0 0 15px #ff6200, 0 0 20px #ff0000;
+    text-shadow: 0 0 5px #ffff00, 0 0 5px #ff0000, 0 0 15px #ff6200,
+      0 0 20px #ff0000;
   }
 
   50% {
-    text-shadow: 0 0 10px #fffF00, 0 0 10px #ff0000, 0 0 30px #ff6200, 0 0 40px #ff0000;
+    text-shadow: 0 0 10px #ffff00, 0 0 10px #ff0000, 0 0 30px #ff6200,
+      0 0 40px #ff0000;
   }
 
   100% {
-    text-shadow: 0 0 5px #fffF00, 0 0 5px #ff0000, 0 0 15px #ff6200, 0 0 20px #ff0000;
+    text-shadow: 0 0 5px #ffff00, 0 0 5px #ff0000, 0 0 15px #ff6200,
+      0 0 20px #ff0000;
   }
 }
-
 
 /* second wave */
 .gg_slider {
@@ -335,8 +327,6 @@ body {
   animation: slide 10s ease-in-out infinite;
 }
 
-
-
 .gg_heading {
   text-align: left;
   font-size: 4vw;
@@ -345,9 +335,7 @@ body {
   font-weight: 900;
   margin-bottom: 1vh;
   color: white;
-
 }
-
 
 .gg_about {
   font-size: 2vw;
@@ -372,23 +360,19 @@ body {
   background-position: center;
   z-index: -1;
   transition: 0.3s ease-in-out all;
-
 }
 
 .gg_cards:nth-child(1):hover::before {
   filter: blur(2px);
-  opacity: .7;
+  opacity: 0.7;
 }
-
 
 .gg_cards:nth-child(1) {
   left: 4.5vw;
-
 }
 
 .gg_cards:nth-child(2) {
   left: -100%;
-
 }
 
 .gg_cards:nth-child(3) {
@@ -435,5 +419,4 @@ body {
   100% {
     transform: translateX(340%);
   }
-
 }

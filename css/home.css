@@ -3,202 +3,186 @@
 @import url(https://fonts.googleapis.com/css?family=Rhodium+Libre:regular);
 @import url(https://fonts.googleapis.com/css?family=Russo+One:regular);
 
-        /*  Ali Strong Type Font Haru */
+/*  Ali Strong Type Font Haru */
 
 @import url(https://fonts.googleapis.com/css?family=New+Rocker:regular);
 @import url(https://fonts.googleapis.com/css?family=Atomic+Age:regular);
 @import url(https://fonts.googleapis.com/css?family=Kelly+Slab:regular);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    min-height: 100vh;
-    background-color: #222222;
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  background-color: #222222;
+  background-size: cover;
+  background-position: center;
 }
 
 .gg_header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 11px 77px;
-    background: rgba(255, 255, 255, 0.1);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    z-index: 100;
-     word-spacing: 17px;     /* Space between the a elements of NAV */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 11px 77px;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  word-spacing: 17px; /* Space between the a elements of NAV */
 }
 
-
-
-.gg_header::before {                  /* Setting the cool effect  */                     
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg,
-            transparent,
-            rgba(255, 255, 255, 0.4),
-            transparent);
-    transition: 0.5s;
+.gg_header::before {
+  /* Setting the cool effect  */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.5s;
 }
-
 
 .gg_header:hover::before {
-    left: 100%;
+  left: 100%;
 }
 
 .gglogoIMG {
-    color: #fff;
-    font-size: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: default;
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
 }
 
-
-
 .gg_globalNav a {
-    font-family: Kelly Slab;
-    color: #fff;
-    font-size: 32px;
-    text-decoration: none;
-    margin-left: 30px;
-    transition: .4s;
-    font-weight:900;
-    font-style: bold;
-    letter-spacing: 1.9px;
-
+  font-family: Kelly Slab;
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.4s;
+  font-weight: 900;
+  font-style: bold;
+  letter-spacing: 1.9px;
 }
 
 .gg_globalNav a:hover {
-    color: #f00;
+  color: #f00;
 }
 
 #menu-icon {
-    font-size: 2rem;
-    color: #ff0000;
-    display: none;
+  font-size: 2rem;
+  color: #ff0000;
+  display: none;
 }
-
 
 /* BREAKPOINTS */
 
 @media (max-width: 992px) {
-    .header {
-        padding: 1.25rem 4%;
-    }
+  .header {
+    padding: 1.25rem 4%;
+  }
 }
-
-
 
 @media (max-width: 768px) {
-    #menu-icon {
-        display: block;
-        font-size: 3.7rem;
-        color: rgb(153, 73, 51);
-    }
+  #menu-icon {
+    display: block;
+    font-size: 3.7rem;
+    color: rgb(153, 73, 51);
+  }
 
+  .gg_globalNav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 4%;
+    display: none;
+  }
 
-    .gg_globalNav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 0.5rem 4%;
-        display: none;
-    }
+  .gg_globalNav.active {
+    display: block;
+  }
 
-    .gg_globalNav.active {
-        display: block;
-    }
+  .gg_globalNav a {
+    display: block;
+    margin: 1.5rem 0;
+    padding-top: -9px;
+  }
 
-    .gg_globalNav a {
-        display: block;
-        margin: 1.5rem 0;
-        padding-top: -9px;
-    }
+  .nav-bg {
+    position: absolute;
+    top: 129px;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 99;
+    display: none;
+  }
 
-    .nav-bg {                               
-        position: absolute;
-        top: 129px;
-        left: 0;
-        width: 100%;
-        height: 280px;
-        background: rgba(255, 255, 255, 0.1);
-        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(10px);
-        z-index: 99;
-        display: none;
-    }
+  .nav-bg.active {
+    display: block;
+  }
 
-    .nav-bg.active {
-        display: block;
-    }
-
-
-    .GG_logoimg {
-        height: 9vh;
-        width: auto;
-    }
+  .GG_logoimg {
+    height: 9vh;
+    width: auto;
+  }
 }
 
-
 @media (max-width: 1024px) {
-    
-    #menu-icon {
-        /* display: block; */
-        color: rgb(153, 73, 51);
-    }
-    
-    
-.gg_globalNav a {
+  #menu-icon {
+    /* display: block; */
+    color: rgb(153, 73, 51);
+  }
+
+  .gg_globalNav a {
     font-family: Kelly Slab;
     color: #fff;
     font-size: 22px;
     text-decoration: none;
-    margin-left:7px;
-    transition: .4s;
-    font-weight:900;
+    margin-left: 7px;
+    transition: 0.4s;
+    font-weight: 900;
     font-style: bold;
     letter-spacing: 1.9px;
+  }
 
-}
-
-.GG_logoIMG {
+  .GG_logoIMG {
     height: 14vh;
     width: auto;
+  }
 }
 
-}
-
-
-@media (max-width: 425px) and (min-width: 125px)  {
-
-.gg_logoIMG {
+@media (max-width: 425px) and (min-width: 125px) {
+  .gg_logoIMG {
     height: auto;
     width: 17vh;
-}
+  }
 
-#menu-icon {
-    
+  #menu-icon {
     display: block;
     font-size: 2.7rem;
     color: rgb(153, 73, 51);
-}
+  }
 
-.nav-bg {                               
+  .nav-bg {
     position: absolute;
     top: 100px;
     left: 0;
@@ -209,16 +193,11 @@ body {
     backdrop-filter: blur(10px);
     z-index: 99;
     display: none;
-}
-
-
-
+  }
 }
 
 .gg_globalNav a:hover,
 .gg_globalNav a.active {
-    color: #f00;
-    transition: .3s ease;
+  color: #f00;
+  transition: 0.3s ease;
 }
-
-
